@@ -1,0 +1,45 @@
+.card-title {
+    font-size: 200px;
+  }
+
+.text{
+    position: relative;
+    /* transform: rotate(0deg);  */
+    /* Угол вращения, начальное значение 0 */
+    transform: rotateY(0deg); /* Угол вращения, начальное значение 0 */
+    animation: rotateOrbit 12s linear infinite; /* Анимация вращения по орбите */
+    transform-origin: center; /* Центральная точка вращения */
+    color: rgb(224, 224, 224);
+}
+.points :nth-child(1){
+    position: absolute;
+    top: 30px;
+    left: 58vw;
+    font-size: 100px;
+    color: red;
+
+}
+.points :nth-child(2){
+    position: absolute;
+    top: 78px;
+    left: 58vw;
+    font-size: 100px;
+    color: yellow;
+}
+.points :nth-child(3){
+    position: absolute;
+    top:126px;
+    left: 58vw;
+    font-size: 100px;
+    color: green;
+}  
+
+/* Анимация для вращения по орбите */
+/* @keyframes rotateOrbit {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  } */
